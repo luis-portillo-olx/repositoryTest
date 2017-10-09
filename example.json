@@ -1,0 +1,82 @@
+   [             {
+
+            "keyword" : "Feature",
+            "id" : "",
+            "name": "Upload picture",
+            "line": "",
+            "uri":"Upload picture",
+            "description": "",
+            "tags":[
+                                    {"name": "apollo"}
+                            ],
+            "elements" : [
+                            {
+                        "id":"",
+    "line":"",
+    "keyword" : "Scenario Outline",
+    "name" : "A user wishes to upload a new picture",
+    "description": "",
+    "type" : "scenario",
+    "tags":[
+        ],
+    "steps" : [
+
+            {
+        "line":"",
+        "name":"Given I have a logged user",
+                "keyword":"Given",
+        "result" : {
+                        
+
+        "status" : "passed"
+
+        },
+                "output":[
+
+                                                    
+                                        
+                        ["REQUEST:\n POST on https://letgoar-a.akamaihd.net/api/v1/trojan/account\n\nREQUESTBODY:\nPOST https://letgoar-a.akamaihd.net/api/v1/trojan/account\nContent-Length: 2\nUser-Agent: GuzzleHttp/6.2.1 curl/7.38.0 PHP/7.0.23\nAuthorization: Basic d2ViOndlYg==\nHost: api.letgo.com.ar\nX-Origin-Panamera: staging\nContent-Type: application/json\n\n\n[]\n\nRESPONSEBODY:\nHTTP/1.1 200 OK\nServer: nginx\nContent-Type: application/json; charset=utf-8\nETag: W/\"cabc98dbe03ddc11b5102262ee1193a1\"\nExpires: Fri, 22 Sep 2017 13:09:24 GMT\nCache-Control: max-age=0, no-cache, no-store\nPragma: no-cache\nDate: Fri, 22 Sep 2017 13:09:24 GMT\nContent-Length: 1704\nSet-Cookie: 56030066b87a66227fdd85a45b4d223d=a1eb1bce3cdcd2563307031214f7a17c; path=/; HttpOnly\nVia: 1.1 browsermobproxy\n\n\n{\n    \"data\": {\n        \"access_token\": \"2867dc15c2fffeb5a60dcada2a8da67fd9ee6d1b\",\n        \"expires_in\": 86400,\n        \"scope\": \"read\",\n        \"client_id\": \"web\",\n        \"user_id\": \"376482\",\n        \"chat_token\": \"dee7b0ab43bc050f098724b298c203e5d8f66d64a988531331\",\n        \"token_type\": \"bearer\",\n        \"refresh_token\": \"b5026e10dea369bbf14a2199d3513cfd82213764\",\n        \"new_account\": true,\n        \"email\": \"cGFuYW1lcmEtY29yZS0xNTg5LWJ3NXF059c50b84a13487.38601579@troyanmail.com\",\n        \"password\": \"olxpassword\"\n    },\n    \"metadata\": {\n        \"users\": {\n            \"376482\": {\n                \"id\": \"376482\",\n                \"name\": \"cGFuYW1lcmEtY29yZS0xNTg5LWJ3NXF059c50b84a13487.38601579\",\n                \"name_provided\": false,\n                \"about\": \"\",\n                \"anonymous\": false,\n                \"images\": [],\n                \"locations\": [],\n                \"badges\": [\n                    {\n                        \"type\": \"facebook\",\n                        \"name\": \"Facebook\",\n                        \"status\": false\n                    },\n                    {\n                        \"type\": \"gplus\",\n                        \"name\": \"G+\",\n                        \"status\": false\n                    },\n                    {\n                        \"type\": \"phone\",\n                        \"name\": \"Phone number\",\n                        \"status\": false\n                    },\n                    {\n                        \"type\": \"vkontakte\",\n                        \"name\": \"VK\",\n                        \"status\": false\n                    }\n                ],\n                \"avatar_id\": \"3\",\n                \"is_business\": false\n            }\n        }\n    }\n}"]
+
+            
+                    
+        ],
+                "match": {
+
+        }
+
+                    },
+        
+            {
+        "line":"",
+        "name":"When I upload a picture which is valid",
+                "keyword":"When",
+        "result" : {
+                        
+
+        "status" : "passed"
+
+        },
+                "output":[
+
+                                                    
+                                        
+                        ["REQUEST:\n POST on https://letgoar-a.akamaihd.net/api/v1/images\n\nREQUESTBODY:\n\n\nRESPONSEBODY:\nHTTP/1.1 201 Created\nServer: nginx\nContent-Type: application/json; charset=utf-8\nETag: \"6e4c845736bb94fee35927cd141f3243\"\nContent-Length: 147\nExpires: Fri, 22 Sep 2017 13:09:28 GMT\nCache-Control: max-age=0, no-cache, no-store\nPragma: no-cache\nDate: Fri, 22 Sep 2017 13:09:28 GMT\nSet-Cookie: 56030066b87a66227fdd85a45b4d223d=fcdeac15f1508981659e755ec6f342b5; path=/; HttpOnly\nVia: 1.1 browsermobproxy\n\n\n{\n    \"data\": {\n        \"id\": \"4khm9iweg90x-GH\",\n        \"url\": \"https://apollo-staging.platform.olx.berlin/v1/files/4khm9iweg90x-GH/image\"\n    }\n}"]
+
+            
+                    
+        ],
+                "match": {
+
+        }
+
+                    }
+        
+    
+    ]
+
+
+                                        }
+                                            ]
+
+                    }
+             ]
